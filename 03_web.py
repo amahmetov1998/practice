@@ -49,7 +49,3 @@ class Server:
     def send_data(self, data):
         if self.router:
             self.router.buffer.append(data)
-
-a = ('rer', 'fefe')
-b=(1,2)
-print({key: value for key, value in zip(a, b)})
