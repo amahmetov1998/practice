@@ -1,5 +1,5 @@
 venv
 .idea
 __pycache__
-practice_2/.env
-practice_1/.env
+env
+.env
