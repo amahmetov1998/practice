@@ -15,9 +15,6 @@ def event_loop(request):
     loop.close()
 
 
-client = TestClient(app)
-
-
 @pytest.fixture(scope="session")
 async def ac() -> AsyncGenerator[AsyncClient, None]:
     async with AsyncClient(transport=ASGITransport(app), base_url='http://test') as ac:
